@@ -91,10 +91,10 @@ class parseJson():
 if __name__ == "__main__":
     ss=parseJson()
     print(ss.filelist)
-    ss.read_zip('55.zip')
+    ss.read_zip('4.zip')
     df_final=ss.concatDfs(ss.df_Dic)
     del ss.df_Dic
-    ss.save_to_excel(df_final,'55_package')
+    ss.save_to_excel(df_final,'5_package')
     del df_final
     gc.collect()
 
